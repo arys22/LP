@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      GLAMPINGVILLAGE グランピングヴィレッジ |
+      東京都奥多摩にあるグランピング施設
+    </title>
+    <!-- サイトの説明 -->
+    <meta
+      name="description"
+      content="東京都奥多摩のグランピング施設GLAMPINGVILLAGEの紹介です。手ぶらでキャンプ体験をご宿泊、日帰り両プラン揃えています。"
+    />
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <!-- svg対応していないブラウザー用 favicon -->
+    <link rel="icon alternate" href="img/favicon.ico" />
+
+    <!-- googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <!-- ハンバーガーメニューのアイコン -->
+        <button type="button" id="hamburger" class="hamburger">
+          <!-- 1番上の線 -->
+          <span class="hamburger__line" id="line1"></span>
+          <!-- 真ん中の線 -->
+          <span class="hamburger__line" id="line2"></span>
+          <!-- 1番下の線 -->
+          <span class="hamburger__line" id="line3"></span>
+        </button>
+        <!-- メニュー画面 -->
+        <nav class="nav" id="nav">
+          <ul class="nav__ul">
+            <li class="nav__img">
+              <a href="#"
+                ><img
+                  src="img/GLAMPINGVILLAGE.svg"
+                  alt="GLAMPINGVILLAGE グランピングビレッジ ロゴ"
+              /></a>
+            </li>
+            <li class="nav__item"><a href="#concept">施設のコンセプト</a></li>
+            <li class="nav__item"><a href="#service">サービスの特徴</a></li>
+            <li class="nav__item"><a href="#meal">食の体験</a></li>
+            <li class="nav__item"><a href="#plan">プラン・料金</a></li>
+            <li class="nav__item"><a href="#access">交通手段</a></li>
+            <li class="nav__item">
+              <a href="#contact">お問い合わせ・ご予約</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav__bg" id="bg"></div>
+      </header>
+
+      <main>
+        <!-- fv -->
+        <div class="fv" id="fv">
+          <div class="fv__bg"></div>
+          <div class="fv__bg"></div>
+          <div class="fv__bg"></div>
+          <div class="fv__wrap">
+            <h1 class="fv__title">
+              <img
+                src="img/GLAMPINGVILLAGE-fv.svg"
+                alt="GLAMPINGVILLAGE グランピングビレッジ"
+                class="fv__logo"
+              />
+            </h1>
+            <!-- Glamping Village -->
+          </div>
+          <a href="#concept" class="page_top fv__scroll" id="scroll">
+            scroll
+          </a>
+        </div>
+
+        <!-- concept -->
+        <section class="wrap concept" id="concept">
+          <p class="concept__slogan">
+            手ぶらで<br />
+            <span class="concept__word">非日常体験。</span>
+          </p>
+          <h2 class="title-2">
+            concept<br /><span class="title-2__jp">施設のコンセプト</span>
+          </h2>
+          <div class="concept__textarea">
+            <p class="concept__text">
+              日常から離れて、時間の流れ変えてみませんか？<br /><br />
+              新宿から電車でおよそ2時間。「ここが東京都？」と思わず首をかしげてしまうほど、山・森・川の大自然に囲まれた奥多摩。
+              大自然の開放感の中で食事を楽しみ、何もしない贅沢を満喫する、特別な時間を。<br />
+              『グランピングヴィレッジ』で自然と触れ合うグランピングをお楽しみください。
+            </p>
+
+            <img class="concept__icon" src="img/tent.svg" alt="テント" />
+            <img class="concept__icon" src="img/chair.svg" alt="イス" />
+            <img class="concept__icon" src="img/lantern.svg" alt="ランタン" />
+            <img class="concept__icon" src="img/fire.svg" alt="炎" />
+          </div>
+          <ul class="concept__area" id="area">
+            <li class="concept__box">
+              <img
+                class="concept__img"
+                src="img/wine-min.jpg"
+                alt="テント内 ワイン"
+                loading="lazy"
+              />
+            </li>
+
+            <li class="concept__box">
+              <img
+                class="concept__img"
+                src="img/stylish-min.jpg"
+                alt="テント内"
+                loading="lazy"
+              />
+            </li>
+
+            <li class="concept__box">
+              <img
+                class="concept__img"
+                src="img/night-min.jpg"
+                alt="夜のテント風景"
+                loading="lazy"
+              />
+            </li>
+
+            <li class="concept__box">
+              <img
+                class="concept__img"
+                src="img/pexels-cottonbro-5364965-min.jpg"
+                alt="テント装飾"
+                loading="lazy"
+              />
+            </li>
+
+            <li class="concept__box">
+              <img
+                class="concept__img"
+                src="img/coffee-min.jpg"
+                alt="朝の珈琲"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+          <div class="concept__btn">
+            <button type="button" class="concept__prev concept__mark" id="prev">
+              prev
+            </button>
+            <button type="button" class="concept__next concept__mark" id="next">
+              next
+            </button>
+          </div>
+        </section>
+
+        <!-- service -->
+        <section class="wrap service" id="service">
+          <h2 class="title-2">
+            service<br /><span class="title-2__jp">サービスの特徴</span>
+          </h2>
+          <div class="service__wrap">
+            <section class="service__area">
+              <div class="service__img">
+                <img
+                  src="img/nursery-min.jpg"
+                  alt="託児所のスタッフ"
+                  loading="lazy"
+                />
+              </div>
+              <div class="service__textarea">
+                <h3 class="title-3">
+                  託児施設<br /><span class="title-3__word">nursery</span>
+                </h3>
+                <p class="service__text">
+                  『グランピングビレッジ』では、それぞれの時間も大切にして欲しいとの想いから、託児所を併設しています。<br />
+                  安心して、ママ友やご夫婦の時間に役立ててください。
+                </p>
+              </div>
+            </section>
+
+            <section class="service__area">
+              <div class="service__img">
+                <img src="img/child-min.jpg" alt="子供の笑顔" loading="lazy" />
+              </div>
+              <div class="service__textarea">
+                <h3 class="title-3">
+                  遊び・体験<br /><span class="title-3__word">experience</span>
+                </h3>
+                <p class="service__text">
+                  お子様はもちろん大人も楽しめる、季節や自然ごとの様々な体験教室、各種アクティビティを用意しています。<br />
+                </p>
+              </div>
+            </section>
+
+            <section class="service__area">
+              <div class="service__img">
+                <img
+                  src="img/trailerhouse.jpg"
+                  alt="夜の宿泊施設 トレーラーハウス"
+                  loading="lazy"
+                />
+              </div>
+              <div class="service__textarea">
+                <h3 class="title-3">
+                  お部屋<br /><span class="title-3__word">room</span>
+                </h3>
+                <p class="service__text">
+                  お子様や女性にとって安心の専用のBBQスペース・トイレ・バスルームを完備しており、アウトドア初心者の方でも安心してお過ごしいただけます。<br />
+                  テントタイプ・トレーラータイプからお選びいただけます。
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- meal -->
+        <section class="wrap meal" id="meal">
+          <h2 class="title-2">
+            meal<br /><span class="title-2__jp">食の体験</span>
+          </h2>
+          <p class="meal__text">
+            『ご宿泊・日帰りBBQ』プランのお客様は、共に下記のコースからお選びいただけます。<br />
+            食材をご自分たちでご用意されるお客様には『素泊り・食材持ち込み』プランがおすすめです。
+          </p>
+          <div class="meal__area">
+            <section class="meal__box">
+              <h3 class="meal__title title-3">厳選食材のBBQコース</h3>
+              <div class="meal__img">
+                <img
+                  class="meal__image"
+                  src="img/meat-min.jpg"
+                  alt="BBQコース"
+                  loading="lazy"
+                />
+              </div>
+              <p class="meal__text meal__box-text">
+                和牛に自家製ベーコン・ソーセージなど豪華なお肉類はもちろん、旬の地魚、地元ならではの食材と、季節の採れたて野菜によるこだわりのBBQ。<br />
+                準備と片付けは全てスタッフにお任せください。
+              </p>
+              <!-- メニュー -->
+              <section class="acd">
+                <h4 class="acd__title js-acd-title">メニュー詳細</h4>
+                <div class="acd__content">
+                  <ul class="acd__list">
+                    <li class="acd__item">国産黒毛和牛ステーキ</li>
+                    <li class="acd__item">タンドリーチキン</li>
+                    <li class="acd__item">自家製生ソーセージ</li>
+                    <li class="acd__item">旬の鮮魚のホイル焼き</li>
+                    <li class="acd__item">季節の野菜各種</li>
+                    <li class="acd__item">農園野菜のサラダ3種のソース添え</li>
+                    <li class="acd__item">クラムチャウダースープ</li>
+                    <li class="acd__item">バケット</li>
+                  </ul>
+                  <p class="acd__price">お1名様 5,650円（税込）</p>
+                  <p class="acd__text">
+                    ※内容は仕入状況により変更する可能性があります。<br />
+                    ※お子さまにはキッズプレートのご用意もございます。（1,900円）
+                  </p>
+                </div>
+              </section>
+            </section>
+
+            <div class="meal__space"></div>
+
+            <section class="meal__box">
+              <h3 class="meal__title title-3">自家製イタリアンコース</h3>
+              <div class="meal__img">
+                <img
+                  class="meal__image"
+                  src="img/piza-min.jpg"
+                  alt="イタリアンコース"
+                  loading="lazy"
+                />
+              </div>
+              <p class="meal__text meal__box-text">
+                窯焼きで作る自家製pizza。(ご希望の方には手作り体験もございます)<br />
+                イタリアから直輸入する生ハムやソーセージ、地元の野菜を使った前菜、グランピングならではのスキレット料理も人気です。
+              </p>
+              <!-- メニュー -->
+              <section class="acd">
+                <h4 class="acd__title js-acd-title">メニュー詳細</h4>
+                <div class="acd__content">
+                  <ul class="acd__list">
+                    <li class="acd__item">牛肉のカルパッチョ</li>
+                    <li class="acd__item">旬鮮魚のフリット</li>
+                    <li class="acd__item">たっぷり野菜のミネストローネ</li>
+                    <li class="acd__item">季節のパスタ</li>
+                    <li class="acd__item">自慢の窯焼きピッツァ</li>
+                    <li class="acd__item">牛肉のタリアータ</li>
+                    <li class="acd__item">厳選アクアパッツァ</li>
+                  </ul>
+                  <p class="acd__price">お1名様 3,880円（税込）</p>
+                  <p class="acd__text">
+                    ※内容は仕入状況により変更する可能性があります。<br />
+                    ※お子さまにはキッズプレートのご用意もございます。（1,000円）
+                  </p>
+                </div>
+              </section>
+            </section>
+          </div>
+
+          <!-- 特典 -->
+          <section class="meal__special">
+            <h3 class="title-3 meal__sp-title">
+              平日のご利用<span class="meal__word">限定特典</span><br />
+              <span class="title-3__word">special</span>
+            </h3>
+            <div class="meal__sp-area">
+              <div class="meal__img-box">
+                <div class="meal__sp-img">
+                  <img
+                    class="meal__image"
+                    src="img/sweets.jpg"
+                    alt="スイーツ"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="meal__space"></div>
+                <div class="meal__sp-img">
+                  <img
+                    class="meal__image"
+                    src="img/marshmallow.jpg"
+                    alt="焼きマシュマロ"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <p class="meal__text meal__sp-text">
+                ご宿泊、日帰り両プラン、平日予約頂いたお客様には、平日割引(<span
+                  class="meal__word"
+                  >最大30%OFF！!</span
+                >)と食後の『<span class="meal__word"
+                  >焼きマシュマロのセット</span
+                >』or『<span class="meal__word">スイーツセット</span
+                >』とお飲み物(<span class="meal__word">コーヒー</span> or
+                <span class="meal__word">紅茶</span> or
+                <span class="meal__word">ジュース</span
+                >)を無料サービスしています。<br />
+                定番の外はこんがり中はトロトロの焼きマシュマロが作れます。
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <!-- plan -->
+        <section class="wrap plan" id="plan">
+          <h2 class="title-2">
+            plan<br /><span class="title-2__jp">プラン・料金</span>
+          </h2>
+          <table class="plan__content">
+            <thead class="plan__head">
+              <tr class="plan__row">
+                <td class="plan__data"></td>
+                <th scope="col" class="plan__title">内容</th>
+                <th scope="col" class="plan__title">価格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="plan__row">
+                <th class="plan__title plan__plan">日帰りBBQプラン</th>
+                <td data-label="内容" class="plan__data plan__txt">
+                  <span
+                    >手ぶらでお手軽なグランピングＢＢＱをお楽しみください。</span
+                  >
+                </td>
+                <td data-label="価格" class="plan__data plan__price">
+                  『BBQ』
+                  <span class="word">
+                    1名様 <span class="plan__num">5,650</span>円（税込）</span
+                  ><br /><br />
+                  『イタリアン』<span class="word"
+                    >1名様 <span class="plan__num">3,880</span>円（税込）</span
+                  >
+                </td>
+              </tr>
+              <tr class="plan__row">
+                <th class="plan__title plan__plan">
+                  素泊り・食材持ち込みプラン
+                </th>
+                <td data-label="内容" class="plan__data plan__txt">
+                  食材・飲料を持ち込んで気ままにグランピングを楽しんで頂けます。
+                </td>
+                <td data-label="価格" class="plan__data plan__price">
+                  『日帰り食材持ち込み』
+                  <span class="word"
+                    >1組 <span class="plan__num">11,380</span>円
+                    〜（税込）</span
+                  ><br /><br />
+                  『素泊まり』<span class="word">
+                    1名様 ( 4名様1室利用時 )
+                    <span class="plan__num">13,380</span>円 ～（税込）</span
+                  >
+                </td>
+              </tr>
+              <tr class="plan__row">
+                <th class="plan__title plan__plan">
+                  ご宿泊(朝・夕食付き)プラン
+                </th>
+                <td data-label="内容" class="plan__data plan__txt">
+                  全ておまかせのプレミアムプランです。
+                </td>
+                <td data-label="価格" class="plan__data plan__price">
+                  <br />
+                  <span class="word">
+                    1名様 ( 4名様1室利用時 )
+                    <span class="plan__num">18,380</span>円 ～（税込）</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="plan__sub">
+            <dl class="plan__list">
+              <dt class="plan__item-term">
+                <span class="plan__item-bg">定員</span>
+              </dt>
+              <dd class="plan__item-des">
+                <span class="plan__num">2～8</span>名様
+              </dd>
+            </dl>
+            <dl class="plan__list">
+              <dt class="plan__item-term">
+                <span class="plan__item-bg">チェックイン</span>
+              </dt>
+              <dd class="plan__item-des">
+                <span class="plan__num"> 15:00 ～ 18:00</span
+                >(遅くなりそうな場合は事前にご連絡ください。)
+              </dd>
+            </dl>
+            <dl class="plan__list">
+              <dt class="plan__item-term">
+                <span class="plan__item-bg">チェックアウト</span>
+              </dt>
+              <dd class="plan__item-des">
+                <span class="plan__num">～10：00</span>まで
+              </dd>
+            </dl>
+            <dl class="plan__list">
+              <dt class="plan__item-term">
+                <span class="plan__item-bg">お支払い方法</span>
+              </dt>
+              <dd class="plan__item-des">現地決済</dd>
+            </dl>
+            <dl class="plan__list">
+              <dt class="plan__item-term plan__item-bg">
+                4歳～小学生以下のお子様について
+              </dt>
+              <dd class="plan__item-des">
+                素泊まり・ご宿泊の利用料金は<span class="plan__num">半額</span
+                >になります。(お食事については『キッズプレート』も用意しています。)
+              </dd>
+            </dl>
+            <p class="plan__text">
+              ※3歳以下の幼児はすべて<span class="plan__num">無料</span>です。
+            </p>
+          </div>
+        </section>
+
+        <!-- access -->
+        <section class="wrap access" id="access">
+          <h2 class="title-2">
+            access<br /><span class="title-2__jp">交通手段</span>
+          </h2>
+          <div class="access__flex">
+            <!-- googlemap -->
+            <div class="access__gmaparea">
+              <div class="access__gmap">
+                <iframe
+                  class="access__frame"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.6217057667304!2d139.09449814954792!3d35.80921928006731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019371a2704ce6f%3A0x903e92a35e763f31!2z44CSMTk4LTAyMTIg5p2x5Lqs6YO96KW_5aSa5pGp6YOh5aWl5aSa5pGp55S65rC35bed77yS77yR77yQ!5e0!3m2!1sja!2sjp!4v1637031494384!5m2!1sja!2sjp"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <p class="access__gm-t">
+                <a
+                  class="access__gm-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://goo.gl/maps/g5FkytmX7hXSyRu69"
+                  >Google mapで見る</a
+                >
+              </p>
+            </div>
+
+            <div class="access__space"></div>
+
+            <div class="access__addarea">
+              <div class="access__img">
+                <img
+                  src="img/GLAMPINGVILLAGE.svg"
+                  alt="GLAMPINGVILLAGE グランビレッジ ロゴ"
+                />
+              </div>
+              <p class="title-3 access__logo">
+                <span class="word">GLAMPING VILLAGE </span>
+                <br /><span class="word small"> グランピングビレッジ</span>
+              </p>
+              <address class="access__address">
+                <span class="title-3 access__title">住所</span><br />
+                <span class="access__small">〒198-0212</span><br /><span
+                  class="access__small"
+                >
+                  東京都西多摩郡奥多摩町氷川 210</span
+                ><br /><br />
+                <span class="title-3 access__title"
+                  >電話予約・お問い合わせ</span
+                >
+                <br />
+                <span class="access__small">TEL : 050-0000-0000</span>
+                <br />
+                <span class="access__small"
+                  >E-mail : glanping-village@glanping.com</span
+                ><br />
+                <span class="access__small"> 営業時間 9:00～19:00</span>
+              </address>
+            </div>
+          </div>
+
+          <dl class="access__plan">
+            <dt class="access__term title-3">
+              電車でお越しの方<br />
+              <span class="title-3__word">By Train</span>
+            </dt>
+            <dd class="access__des">
+              新宿駅 → JR中央線立川駅 → JR青梅線に乗換 →
+              奥多摩駅。新宿より約2時間です。
+              <br />
+              <br />
+
+              尚、当施設の<span class="access__weight">無料送迎は予約制</span
+              >です。予約の際にお申し付けください。
+            </dd>
+          </dl>
+          <dl class="access__plan">
+            <dt class="access__term title-3">
+              お車 ⋅ バイクでお越しの方<br /><span class="title-3__word"
+                >By Car</span
+              >
+            </dt>
+            <dd class="access__des">
+              東京方面からは、中央自動車道八王子JCT ～ 圏央道日の出IC ～
+              国道411号線 ～ 奥多摩町。
+            </dd>
+          </dl>
+        </section>
+
+        <!-- contact -->
+        <section class="wrap contact" id="contact">
+          <h2 class="title-2">
+            contact<br /><span class="title-2__jp">お問い合わせ・ご予約</span>
+          </h2>
+
+          <!-- form -->
+          <form class="form" action="#" method="post" id="form">
+            <p class="form__title">
+              お問い合わせ・ご予約プラン<span class="form__required">必須</span>
+            </p>
+            <ul class="form__radio">
+              <li class="form__item">
+                <label class="form__label" for="inquiry">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="inquiry"
+                    value="お問い合わせ"
+                    checked
+                    required
+                  />お問い合わせ</label
+                >
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="bbq">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="bbq"
+                    value="日帰りBBQプラン(BBQ)"
+                  />日帰りプラン(BBQ)</label
+                >
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="italian">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="italian"
+                    value="日帰りBBQプラン(イタリアン)"
+                  />日帰りプラン(イタリアン)</label
+                >
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="day">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="day"
+                    value="日帰り食材持ち込みプラン"
+                  />日帰り食材持ち込みプラン</label
+                >
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="stay">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="stay"
+                    value="素泊まりプラン"
+                  />素泊まりプラン</label
+                >
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="premium">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="premium"
+                    value="その他"
+                  />ご宿泊(朝・夕食付き)プラン</label
+                >
+              </li>
+            </ul>
+
+            <p class="form__title">
+              <label for="date">ご予約日</label>
+            </p>
+            <input type="date" name="date" id="date" />
+
+            <p class="form__title">
+              <label for="name"
+                >お名前<span class="form__required">必須</span></label
+              >
+            </p>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="name"
+              required
+            />
+
+            <p class="form__title">
+              <label for="email"
+                >メールアドレス<span class="form__required">必須</span></label
+              >
+            </p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              required
+            />
+
+            <p class="form__title">
+              <label for="content">お問い合わせ内容</label>
+            </p>
+            <textarea
+              name="content"
+              id="content"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="form__btn-wrap">
+              <input class="form__btn" type="submit" value="送信" />
+            </div>
+          </form>
+        </section>
+
+        <button type="button" class="page_top" id="page-top">top</button>
+      </main>
+
+      <footer class="footer">
+        <p class="title-2 footer__menu">menu</p>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#concept">施設のコンセプト</a></li>
+          <li class="footer__item"><a href="#service">サービスの特徴</a></li>
+          <li class="footer__item"><a href="#meal">食の体験</a></li>
+          <li class="footer__item"><a href="#plan">プラン・料金</a></li>
+          <li class="footer__item"><a href="#access">交通手段</a></li>
+          <li class="footer__item">
+            <a href="#contact">お問い合わせ・ご予約</a>
+          </li>
+        </ul>
+
+        <div class="access__addarea">
+          <div class="footer__img">
+            <img
+              src="img/GLAMPINGVILLAGE.svg"
+              alt="GLAMPINGVILLAGE グランピングビレッジ ロゴ"
+            />
+          </div>
+          <p class="title-3 footer__title">
+            <span class="word">GLAMPING VILLAGE </span>
+            <br /><span class="word small"> グランピングビレッジ</span>
+          </p>
+          <address class="access__address">
+            <span class="title-3 access__title">住所</span><br />
+            <span class="access__small">〒198-0212</span><br /><span
+              class="access__small"
+            >
+              東京都西多摩郡奥多摩町氷川 210</span
+            ><br /><br />
+            <span class="title-3 access__title">電話予約・お問い合わせ</span>
+            <br />
+            <span class="access__small">050-0000-0000</span>
+            <br />
+            <span class="access__small"
+              >E-mail : glanping-village@glanping.com</span
+            ><br />
+            <span class="access__small"> 営業時間 9:00～19:00</span>
+          </address>
+        </div>
+        <p class="copyright">&copy; 2021 GLAMPING VILLAGE</p>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

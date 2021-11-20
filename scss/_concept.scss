@@ -1,0 +1,149 @@
+// $ff: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho",
+//   "MS PMincho", serif;
+// $bp: 768px;
+@use "variable" as var;
+.concept {
+  &__slogan {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var.$ff;
+    line-height: 2;
+    padding-bottom: 50px;
+    letter-spacing: 5px;
+    color: #444;
+    width: 220px;
+    word-break: keep-all;
+    margin: 0 auto;
+  }
+  &__word {
+    padding-left: 40px;
+  }
+  &__text {
+    padding: 1.5rem;
+    margin: 0 auto 35px;
+    max-width: 650px;
+    line-height: 1.6;
+  }
+  &__textarea {
+    position: relative;
+  }
+  &__icon {
+    display: none;
+    width: 7%;
+    min-width: 45px;
+    max-width: 60px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    top: -35%;
+    right: 12%;
+    transform: rotate(15deg);
+    &:nth-of-type(2) {
+      top: 15%;
+      right: 5%;
+      transform: rotate(-18deg) scale(0.7);
+    }
+    &:nth-of-type(3) {
+      top: 72%;
+      left: 2.5%;
+      transform: rotate(-16deg) scale(0.7);
+    }
+    &:nth-of-type(4) {
+      top: 90%;
+      left: 13%;
+      transform: rotate(18deg) scale(0.75);
+    }
+  }
+  &__btn {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+  &__mark {
+    padding: 10px 30px;
+    position: relative;
+    top: 0;
+  }
+  &__prev {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 10px;
+      width: 25px;
+      height: 25px;
+      transform: rotate(-135deg);
+      border-top: 1px solid;
+      border-right: 1px solid;
+    }
+  }
+  &__next {
+    transition: all 0.8s ease-out;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      width: 25px;
+      height: 25px;
+      transform: rotate(45deg);
+      border-top: 1px solid;
+      border-right: 1px solid;
+    }
+  }
+  &__area {
+    display: flex;
+    list-style: none;
+    width: calc(300px * 5);
+    align-items: center;
+    transition: all 0.8s ease-out;
+  }
+  &__box {
+    width: 300px;
+    &:nth-of-type(even) {
+      padding: 0 40px;
+    }
+    &:nth-of-type(3) {
+      align-self: flex-start;
+    }
+    &:nth-of-type(5) {
+      align-self: flex-end;
+    }
+  }
+  &__img {
+    border-radius: 20px;
+  }
+}
+
+/* pc用 */
+@media screen and(min-width: var.$bp) {
+  .concept {
+    &__slogan {
+      padding-bottom: 70px;
+      font-size: 3.5rem;
+    }
+    &__text {
+      margin-bottom: 40px;
+    }
+    &__icon {
+      display: block;
+    }
+    &__btn {
+      margin-top: 25px;
+    }
+    &__area {
+      width: calc(450px * 5);
+    }
+    &__box {
+      width: 450px;
+      padding: 0 20px;
+      &:nth-of-type(even) {
+        padding: 0 100px;
+      }
+    }
+  }
+}

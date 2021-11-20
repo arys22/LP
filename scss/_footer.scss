@@ -1,0 +1,49 @@
+@use "variable" as var;
+.footer {
+  padding: 0px 4% 5px;
+  text-align: center;
+  &__menu {
+    padding: 30px 0 5px;
+    border-top: 1px solid;
+    color: var.$fc;
+    text-align: start;
+  }
+  &__list {
+    text-align: start;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  &__item {
+    padding: 5px;
+    margin: 5px;
+    margin-left: 4%;
+  }
+  &__img {
+    width: 50px;
+    display: inline-block;
+  }
+  &__title {
+    display: inline-block;
+    padding-bottom: 0;
+  }
+}
+
+.copyright {
+  font-size: 0.75em;
+}
+/* tb以上用 */
+@media screen and(min-width: var.$tp) {
+  .footer {
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__item {
+      &:last-of-type {
+        margin-right: auto;
+      }
+    }
+  }
+}

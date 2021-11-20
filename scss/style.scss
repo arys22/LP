@@ -1,0 +1,43 @@
+@charset "utf-8";
+@use "reset";
+@use "variable" as var;
+@use "common";
+@use "burger-top";
+@use "fv";
+@use "concept";
+@use "service";
+@use "meal";
+@use "plan";
+@use "access";
+@use "contact";
+@use "footer";
+// font-family: 'M PLUS Rounded 1c', sans-serif;300 400
+// $ff: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho",
+/*1rem＝10px*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var.$fc;
+  font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic Pro",
+    "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic,
+    "游ゴシック体", "メイリオ", sans-serif;
+  letter-spacing: normal;
+  // font-feature-settings: 'palt' 1;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.header {
+  background: transparent;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

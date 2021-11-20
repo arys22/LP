@@ -1,0 +1,119 @@
+@use "variable" as var;
+.form {
+  max-width: 650px;
+  margin: 30px auto 50px;
+  &__title {
+    font-size: 1.8rem;
+    font-family: var.$ff;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+  &__required {
+    margin-left: 25px;
+    font-size: 1.2rem;
+    background-color: var.$fc;
+    color: #ffffff;
+    padding: 0 5px;
+    border-radius: 20px;
+    font-weight: 400;
+  }
+  &__radio {
+    font-size: 1.6rem;
+    letter-spacing: 0.004em;
+    margin: 15px 0 40px 10px;
+    list-style-type: none;
+  }
+  &__item {
+    margin-bottom: 14px;
+  }
+  &__label {
+    cursor: pointer;
+  }
+  &__btn-wrap {
+    text-align: center;
+  }
+  &__btn {
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-family: var.$ff;
+    transition: all 0.3s ease-out;
+    font-weight: 400;
+    background-color: #fff;
+    width: 40%;
+    text-align: center;
+    &:hover {
+      background-color: #555;
+      color: #fff;
+    }
+  }
+}
+/* inputの枠 */
+input[type="radio"] {
+  margin: 0 10px 2px 5px;
+  /* ボタン黒くする */
+  appearance: none;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -5.4px;
+    left: -5.3px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: block;
+  }
+  &:checked {
+    border-radius: 50%;
+    border: 3.5px solid;
+    margin-left: 1.5px;
+    margin-right: 6.5px;
+    background-color: var.$fc;
+  }
+  /* ここまで */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  height: 48px;
+  border: 1px solid;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  padding: 1em;
+}
+input[type="date"] {
+  height: 48px;
+  border: 1px solid;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  padding: 1em;
+  cursor: pointer;
+  &::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
+}
+textarea {
+  width: 100%;
+  height: 210px;
+  border: 1px solid #333333;
+  resize: none;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+@media screen and(min-width: var.$bp) {
+  .form {
+    &__radio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,179 @@
+// $fc: #37373c;
+// $ff: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho",
+//   "MS PMincho", serif;
+@use "variable" as var;
+/* ハンバーガーメニュー アイコン*/
+.hamburger {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 4%;
+  width: 42px;
+  height: 22px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  z-index: 100;
+  &__line {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.4s ease-out;
+    border-radius: 2px;
+  }
+}
+#line1 {
+  top: 0;
+}
+#line2 {
+  top: 10px;
+}
+#line3 {
+  bottom: 0;
+}
+/* アイコンここまで */
+/* nav メニュー画面*/
+.nav {
+  position: absolute;
+  top: 0;
+  /*ナビメニューを右に隠した状態*/
+  right: -300px;
+  width: 300px;
+  /*0.5秒かけてナビメニューがスライドする*/
+  transition: all 0.5s ease-out;
+  height: 100vh;
+  opacity: 0;
+  background: #fff;
+  z-index: 9;
+  font-family: var.$ff;
+  &__ul {
+    margin-top: 10vh;
+  }
+  &__img {
+    width: 60px;
+    margin: 0 auto 30px;
+  }
+  &__item {
+    padding-left: 30px;
+    &:not(:last-of-type) {
+      margin-bottom: 35px;
+    }
+  }
+  &__bg {
+    opacity: 0;
+    visibility: hidden;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    z-index: 8;
+  }
+}
+/* 動き */
+.in {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+.open {
+  opacity: 0.5;
+  visibility: visible;
+}
+/* bodyに追加⇨スクロールさせない */
+.hidden {
+  overflow: hidden;
+}
+.line_1 {
+  /*-45度回転させる*/
+  transform: translateY(10px) rotate(-225deg);
+  top: 0;
+  background-color: var.$fc;
+}
+.line_2 {
+  opacity: 0;
+  left: 30%;
+}
+.line_3 {
+  /*45度回転させる*/
+  transform: translateY(-10px) rotate(225deg);
+  bottom: 0;
+  background-color: var.$fc;
+}
+.change {
+  background-color: var.$fc;
+}
+/***追従するトップへ戻るボタン***/
+.page_top {
+  position: fixed;
+  right: 1.5%;
+  bottom: 40px;
+  height: 30px;
+  text-transform: uppercase;
+  font-family: var.$ff;
+  transform: rotate(90deg);
+  font-size: 90%;
+  line-height: 1.5rem;
+  color: #737373;
+  padding: 0 0 0 35px;
+  z-index: 80;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 1px;
+    border-radius: 10px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 75px;
+    border-top: solid 1px;
+    border-radius: 10px;
+  }
+  &:hover {
+    &::before {
+      animation: active-b 1.8s ease-out infinite;
+    }
+    &::after {
+      animation: active-a 1.8s ease-out infinite;
+    }
+  }
+}
+@keyframes active-a {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes active-b {
+  0% {
+    transform: translateX(0) rotate(35deg);
+  }
+  50% {
+    transform: translateX(-5px) rotate(35deg);
+  }
+  100% {
+    transform: translateX(0) rotate(35deg);
+  }
+}

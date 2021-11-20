@@ -1,0 +1,152 @@
+// $fc: #37373c;
+@use "variable" as var;
+.fv {
+  color: #fff;
+  min-height: 100vh; /* カスタムプロパティ未対応ブラウザ用のフォールバック */
+  min-height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var.$fc;
+  &__bg {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: slide 30s 0s infinite;
+    z-index: 10;
+    &:nth-of-type(1) {
+      background-image: url(../img/GlampingVillage-img.jpg);
+      filter: brightness(90%);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../img/GlampingVillage-2.jpg.jpg);
+      animation-delay: 10s;
+      filter: brightness(75%);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../img/starry.jpg);
+      animation-delay: 20s;
+    }
+  }
+  &__wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 12;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__logo {
+    width: 20%;
+    height: auto;
+    min-width: 160px;
+    fill: #fff;
+    // svgに直接記述 img/GLAMPINGVILLAGE-fv.svg
+    // &-g {
+    //   fill: transparent;
+    //   stroke: #fff;
+    //   stroke-dasharray: 12000;
+    //   stroke-dashoffset: 0;
+    //   stroke-opacity: 0;
+    //   stroke-width: 15;
+    //   animation: hello 6s ease-in-out forwards 3s;
+    // }
+  }
+  &__scroll {
+    position: absolute;
+    color: #fff;
+    left: 1.5%;
+    opacity: 1;
+    padding: 0 0 0 5px;
+    bottom: 60px;
+    width: 95px;
+    &::after {
+      top: 22px;
+      width: 95px;
+    }
+    &::before {
+      top: 22px;
+      left: 95px;
+      transform: rotate(-145deg);
+    }
+    &:hover {
+      &::before {
+        animation: down-b 1.8s ease-out infinite;
+      }
+      &::after {
+        animation: down-a 1.8s ease-out infinite;
+      }
+    }
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    transform: scale(1.1);
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+// svgに直接記述 img/GLAMPINGVILLAGE-fv.svg
+// @keyframes hello {
+//   0% {
+//     stroke-dashoffset: 12000;
+//     fill: transparent;
+//     stroke-opacity: 1;
+//   }
+//   35% {
+//     fill: transparent;
+//     stroke-opacity: 1;
+//   }
+//   70% {
+//     fill: #fff;
+//   }
+//   100% {
+//     stroke-dashoffset: 0;
+//     stroke-opacity: 0;
+//     fill: #fff;
+//   }
+// }
+@keyframes down-a {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes down-b {
+  0% {
+    transform: translateX(0) rotate(-145deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(-145deg);
+  }
+  100% {
+    transform: translateX(0) rotate(-145deg);
+  }
+}

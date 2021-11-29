@@ -14,7 +14,21 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
     <!-- svg対応していないブラウザー用 favicon -->
     <link rel="icon alternate" href="img/favicon.ico" />
-
+    <!-- 先にfirst view -->
+    <link rel="preload" href="img/GlampingVillage-img.jpg" as="image" />
+    <style>
+      .fv__bg:first-of-type {
+        background-image: url(img/GlampingVillage-img.jpg);
+      }
+    </style>
+    <link rel="stylesheet" href="css/first-view.min.css" />
+    <!-- 読み込みを遅延させる -->
+    <link
+      rel="stylesheet"
+      href="css/style.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
     <!-- googleフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +43,6 @@
       media="print"
       onload="this.media='all'"
     />
-    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <div class="wrapper">

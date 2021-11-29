@@ -11,12 +11,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 12;
+  z-index: 112;
 }
 .loaded {
   opacity: 0;
   visibility: hidden;
 }
+
 .fv {
   color: #fff;
   min-height: 100vh; /* カスタムプロパティ未対応ブラウザ用のフォールバック */
@@ -39,7 +40,7 @@
     z-index: 10;
     &:first-of-type {
       // background-image: url(../img/GlampingVillage-img.jpg);
-      filter: brightness(90%);
+      filter: brightness(95%);
     }
     &:nth-of-type(2) {
       background-image: url(../img/GlampingVillage-2.jpg.jpg);
@@ -58,7 +59,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 13;
+    z-index: 113;
   }
   &__title {
     text-align: center;

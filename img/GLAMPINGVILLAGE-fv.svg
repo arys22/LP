@@ -9,7 +9,7 @@
     stroke-dashoffset: 0;
     stroke-opacity: 0;
     stroke-width: 15;
-    animation: hello 6s ease-in-out forwards 3.8s;
+    animation: hello 6s ease-in-out forwards 4s;
     }
 @keyframes hello {
   0% {

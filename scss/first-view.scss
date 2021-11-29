@@ -2,6 +2,21 @@
 @use "reset";
 @use "burger-top";
 @use "variable" as var;
+/* ローディング画面 */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 2s ease-in-out;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
 .fv {
   color: #fff;
   min-height: 100vh; /* カスタムプロパティ未対応ブラウザ用のフォールバック */
@@ -43,7 +58,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 12;
+    z-index: 13;
   }
   &__title {
     text-align: center;
@@ -91,6 +106,7 @@
     }
   }
 }
+
 @keyframes slide {
   0% {
     opacity: 0;

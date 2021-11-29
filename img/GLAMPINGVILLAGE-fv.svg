@@ -2,13 +2,15 @@
  width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
  preserveAspectRatio="xMidYMid meet">
 <style type="text/css">
-.fv__logo-g{fill: transparent;
+.fv__logo-g{
+    fill: transparent;
     stroke: #fff;
     stroke-dasharray: 12000;
     stroke-dashoffset: 0;
     stroke-opacity: 0;
     stroke-width: 15;
-    animation: hello 6s ease-in-out forwards 3.5s;}
+    animation: hello 6s ease-in-out forwards 3.8s;
+    }
 @keyframes hello {
   0% {
     stroke-dashoffset: 12000;

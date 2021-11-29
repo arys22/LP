@@ -1,4 +1,9 @@
 "use strict";
+// ローディング画面
+// window.onload = function () {
+
+// };
+
 /* ハンバーガーメニュー */
 function hamburger() {
   document.getElementById("line1").classList.toggle("line_1");
@@ -252,8 +257,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// input[type="date"] の初期値日付
+// ページを読み込んだら
 window.onload = function () {
+  // ローディング画面
+  const loading = document.getElementById("loading");
+  loading.classList.add("loaded");
+  // input[type="date"] の初期値日付
   var today = new Date();
   today.setDate(today.getDate());
   var yyyy = today.getFullYear();

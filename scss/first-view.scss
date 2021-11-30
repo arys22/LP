@@ -170,3 +170,14 @@
     transform: translateX(0) rotate(-145deg);
   }
 }
+
+// スライダーの一つずつのwidth
+// jsファイルより先に読み込むため
+.concept__box {
+  width: 300px;
+}
+@media screen and(min-width: var.$bp) {
+  .concept__box {
+    width: 450px;
+  }
+}

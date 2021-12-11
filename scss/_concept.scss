@@ -82,7 +82,7 @@
     }
   }
   &__next {
-    transition: all 0.8s ease-out;
+    transition: transform 0.8s ease-out;
     &::after {
       content: "";
       position: absolute;

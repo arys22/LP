@@ -82,7 +82,7 @@
     }
   }
   &__next {
-    transition: transform 0.8s ease-out;
+    transition: all 0.8s ease-out;
     &::after {
       content: "";
       position: absolute;
@@ -100,7 +100,7 @@
     list-style: none;
     width: calc(300px * 5);
     align-items: center;
-    transition: all 0.8s ease-out;
+    transition: transform 0.8s ease-out;
   }
   &__box {
     width: 300px;

@@ -59,7 +59,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 113;
+    z-index: 12;
     pointer-events: none;
   }
   &__title {
@@ -176,7 +176,7 @@
 .concept__box {
   width: 300px;
 }
-@media screen and(min-width: var.$bp) {
+@media screen and (min-width: var.$bp) {
   .concept__box {
     width: 450px;
   }

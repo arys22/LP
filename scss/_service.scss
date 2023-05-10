@@ -25,7 +25,7 @@
   }
 }
 // pc以上用
-@media screen and(min-width: var.$bp) {
+@media screen and (min-width: var.$bp) {
   .service {
     &__wrap {
       flex-direction: row;
